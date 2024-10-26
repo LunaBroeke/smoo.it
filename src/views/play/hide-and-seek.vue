@@ -86,5 +86,15 @@
         <li>[Gravity] <smoo-btn L/> + <smoo-btn DRight/> - Toggle gravity camera.</li>
       </ul>
     </p>
+    <p>
+      Game mode settings in the Hide &amp; Seek config menu:
+      <ul>
+        <li><b>H&amp;S Gravity</b>: The players gravity changes depending on the ground Mario stands on. E.g. to run on walls.</li>
+        <li><b>Mario Collision</b>: Prevents running trough other players.</li>
+        <li><b>Mario Bounce</b>: Jumping onto other players bounces the own player upwards.</li>
+        <li><b>Cappy Collision</b>: Prevents running trough Cappy from other players.</li>
+        <li><b>Cappy Bounce</b>: Jumping onto Cappy from other players bounces the own player upwards.</li>
+      </ul>
+    </p>
   </smoo-card>
 </template>
