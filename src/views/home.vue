@@ -38,7 +38,7 @@
         Available game modes:
         <br/>
         <ul>
-          <li>Hide &amp; Seek</li>
+          <li><smoo-role-icon type="seek"/> <a-int name="play" id="hide-and-seek">Hide &amp; Seek</a-int></li>
         </ul>
       </p>
     </b-card>

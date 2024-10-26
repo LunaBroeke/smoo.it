@@ -112,6 +112,8 @@ body.smoo-dark-mode {
     .name img.tag-icon { filter: brightness(0.65); }
   }
 
+  img.smoo-role-icon { filter: brightness(0.65); }
+
   .smoo-view-host-commands {
     .card-body > div, .card-body .sub-commands > div {
       &:not(:first-child) {

@@ -6,29 +6,29 @@
     @show="$emit('show', $event)"
     @hidden="$emit('hidden', $event)"
   >
-    <template #header>Common Hide &amp; Seek rules</template>
+    <template #header><smoo-role-icon type="seek"/> <b>Hide &amp; Seek</b> game mode</template>
     <p>
       A kingdom that hasn't been played in is chosen randomly for a new round.
-      Some of the players that haven't started a round as a seeker before are chosen randomly to be seekers for this round.
-      (For fairness reasons the amount of seekers should be the same in all rounds or might be adjusted to the size of the kingdom.)
+      Some of the players that haven't started a round as a <smoo-role-icon type="seek"/>Seeker before are chosen randomly to be <smoo-role-icon type="seek"/>Seekers for this round.
+      (For fairness reasons the amount of <smoo-role-icon type="seek"/>Seekers should be the same in all rounds or might be adjusted to the size of the kingdom.)
     </p>
     <p>
-      The seekers go into the Odyssey and start to count down for 60 or more seconds.
-      The hiders run away and look for a place to hide in.
-      After the time is up, the hiders switch to hider mode (which will unpause their timer) and the seekers start seeking them.
-      Hiders can move around at any time whenever they want and aren't limited to the first minute.
-      Only seekers are allowed to use the checkpoints to warp around.
+      The <smoo-role-icon type="seek"/>Seekers go into the Odyssey and start to count down for 60 or more seconds.
+      The <smoo-role-icon type="hide"/>Hiders run away and look for a place to hide in.
+      After the time is up, the <smoo-role-icon type="hide"/>Hiders switch to hider mode (which will unpause their timer) and the <smoo-role-icon type="seek"/>Seekers start seeking them.
+      <smoo-role-icon type="hide"/>Hiders can move around at any time whenever they want and aren't limited to the first minute.
+      Only <smoo-role-icon type="seek"/>Seekers are allowed to use the checkpoints to warp around.
     </p>
     <p>
-      If a seeker touches a hider, the hider dies.
-      When a hider dies their timer pauses and they become seekers.
-      Dying within the first few minutes of a round is forgivable, unless while being chased by a seeker.
-      Once everyone has become a seeker, the round is over.
-      When everyone has started a round as a seeker, the game is over and the player with the highest time wins.
+      If a <smoo-role-icon type="seek"/>Seeker touches a <smoo-role-icon type="hide"/>Hider, the <smoo-role-icon type="hide"/>Hider dies.
+      When a <smoo-role-icon type="hide"/>Hider dies their timer pauses and they become <smoo-role-icon type="seek"/>Seekers.
+      Dying within the first few minutes of a round is forgivable, unless while being chased by a <smoo-role-icon type="seek"/>Seeker.
+      Once everyone has become a <smoo-role-icon type="seek"/>Seeker, the round is over.
+      When everyone has started a round as a <smoo-role-icon type="seek"/>Seeker, the game is over and the player with the highest time wins.
     </p>
     <p>
-      After some time in a round - usually every two minutes - hiders are obligated to give the seekers a hint where they are.
-      Seekers choose what kind of hint to provide.
+      After some time in a round - usually every two minutes - <smoo-role-icon type="hide"/>Hiders are obligated to give the <smoo-role-icon type="seek"/>Seekers a hint where they are.
+      <smoo-role-icon type="seek"/>Seekers choose what kind of hint to provide.
       Starting with more general hints and as the round goes on more specific hints.
       The hint has to be a truthful statement at the moment given.
       Even if a second later it isn't true anymore.
