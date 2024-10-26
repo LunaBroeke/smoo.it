@@ -75,5 +75,16 @@
         </li>
       </ul>
     </p>
+    <p>
+      Controls:
+      <ul>
+        <li><smoo-btn L/> + <smoo-btn DLeft/> - Enable/disable the Hide &amp; Seek game mode.</li>
+        <li><smoo-btn DUp/> - Switch between <smoo-role-icon type="hide"/>Hider and <smoo-role-icon type="seek"/>Seeker.</li>
+        <li>[<smoo-role-icon type="hide"/>Hider] <smoo-btn DLeft/> - Decrease hiding time.</li>
+        <li>[<smoo-role-icon type="hide"/>Hider] <smoo-btn DRight/> - Increase hiding time.</li>
+        <li>[<smoo-role-icon type="hide"/>Hider] <smoo-btn L/> + <smoo-btn DDown/> - Reset hiding time.</li>
+        <li>[Gravity] <smoo-btn L/> + <smoo-btn DRight/> - Toggle gravity camera.</li>
+      </ul>
+    </p>
   </smoo-card>
 </template>
