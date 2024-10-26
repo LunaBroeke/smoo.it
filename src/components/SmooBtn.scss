@@ -1,5 +1,5 @@
 .smoo-btn {
-  .ZL, .L, .ZR, .R, .A, .B {
+  .ZL, .L, .ZR, .R, .A, .B, .X, .Y {
     display: inline-block;
     text-align: center;
     border: 1px solid black;
@@ -17,7 +17,7 @@
   .ZL, .L { border-top-left-radius: 1.2em; }
   .ZR, .R { border-top-right-radius: 1.2em; }
 
-  .A, .B {
+  .A, .B, .X, .Y {
     border-radius: 1em;
     width: 2em;
   }

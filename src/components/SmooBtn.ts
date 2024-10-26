@@ -1,7 +1,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
-const customBtns = [ 'ZL', 'L', 'ZR', 'R', 'A', 'B' ]
-type TBtn = 'ZL' | 'L' | 'ZR' | 'R' | 'A' | 'B' | 'DUp' | 'DDown' | 'DLeft' | 'DRight'
+const customBtns = [ 'ZL', 'L', 'ZR', 'R', 'A', 'B', 'X', 'Y' ]
+type TBtn = 'ZL' | 'L' | 'ZR' | 'R' | 'A' | 'B' | 'X' | 'Y' | 'DUp' | 'DDown' | 'DLeft' | 'DRight'
 
 @Component({})
 export default class Servers extends Vue {
@@ -12,6 +12,8 @@ export default class Servers extends Vue {
     if (this.R) { return 'R' }
     if (this.A) { return 'A' }
     if (this.B) { return 'B' }
+    if (this.X) { return 'X' }
+    if (this.Y) { return 'Y' }
     if (this.DUp) { return 'DUp' }
     if (this.DDown) { return 'DDown' }
     if (this.DLeft) { return 'DLeft' }
@@ -52,6 +54,12 @@ export default class Servers extends Vue {
 
   @Prop({ required: false, type: Boolean, default: false })
   private B! : boolean
+
+  @Prop({ required: false, type: Boolean, default: false })
+  private X! : boolean
+
+  @Prop({ required: false, type: Boolean, default: false })
+  private Y! : boolean
 
   @Prop({ required: false, type: Boolean, default: false })
   private DUp! : boolean
