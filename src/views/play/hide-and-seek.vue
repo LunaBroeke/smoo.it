@@ -8,6 +8,11 @@
   >
     <template #header><smoo-role-icon type="seek"/> <b>Hide &amp; Seek</b> game mode</template>
     <p>
+      The <b>Hide &amp; Seek</b> game mode was developed by
+      <a-ext href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/" icon="github">CraftyBoss</a-ext>
+      and released in 2022 with the first version <code>v1.0.0</code> of the official mod.
+    </p>
+    <p>
       A kingdom that hasn't been played in is chosen randomly for a new round.
       Some of the players that haven't started a round as a <smoo-role-icon type="seek"/>Seeker before are chosen randomly to be <smoo-role-icon type="seek"/>Seekers for this round.
       (For fairness reasons the amount of <smoo-role-icon type="seek"/>Seekers should be the same in all rounds or might be adjusted to the size of the kingdom.)
