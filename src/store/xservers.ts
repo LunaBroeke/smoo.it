@@ -74,10 +74,10 @@ class XServers extends VuexModule {
   async load () {
     this.startLoading()
 
-    // get server data from the api server
+    // get server data from the api2 server
     try {
       const { data } = await axios.get(
-        'https://api.smoo.it/servers.json',
+        'https://api2.smoo.it/servers.json',
         {
           timeout: 10000, // 10s
         },
@@ -85,20 +85,20 @@ class XServers extends VuexModule {
       this.loaded(data)
     } catch (error1) {
       console.error(error1)
-
-      // fallback to the api2 server
-      try {
-        const { data } = await axios.get(
-          'https://api2.smoo.it/servers.json',
-          {
-            timeout: 10000, // 10s
-          },
-        )
-        this.loaded(data)
-      } catch (error2) {
-        console.error(error2)
-        this.failed(error1 as Error)
-      }
+      // // fallback to another server
+      // try {
+      //   const { data } = await axios.get(
+      //     'https://api2.smoo.it/servers.json',
+      //     {
+      //       timeout: 10000, // 10s
+      //     },
+      //   )
+      //   this.loaded(data)
+      // } catch (error2) {
+      //   console.error(error2)
+      //   this.failed(error1 as Error)
+      // }
+      this.failed(error1 as Error)
     }
   }
 
