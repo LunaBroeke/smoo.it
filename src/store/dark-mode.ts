@@ -10,7 +10,7 @@ import { store, isset } from './index'
   preserveState : isset('dark-mode'),
 })
 class XDarkMode extends VuexModule {
-  enabled = false
+  enabled = true
 
   @Mutation
   setEnabled (enabled: boolean) {
