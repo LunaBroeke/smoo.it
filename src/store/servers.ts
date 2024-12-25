@@ -141,7 +141,7 @@ export const servers: IServer[] = [
       Server: { MaxPlayers: 8 },
     },
   },
-   {
+  {
     name     : 'Kamrons Public (H&S)',
     server   : { host: '66.220.29.106', ip: '66.220.29.106', port: 1027 },
     location : { flag: 'us', name: 'US-West' },
