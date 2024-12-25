@@ -142,6 +142,18 @@ export const servers: IServer[] = [
     },
   },
   {
+    name     : 'Kamrons Public (H&S)',
+    server   : { host: '66.220.29.106', ip: '66.220.29.106', port: 1027 },
+    location : { flag: 'us', name: 'US-West' },
+    version  : linkTree('main', 'Sanae6/SmoOnlineServer', 'Sanae6/Server'),
+    settings : {
+      Server        : { MaxPlayers: 8 },
+      Scenario      : { MergeEnabled: true },
+      Shines        : { Enabled: true },
+      PersistShines : { Enabled: true },
+    },
+  },
+  {
     dead     : true,
     name     : 'Jeff',
     server   : { host: 'jeff.smoo.it', ip: '172.105.137.146' },
