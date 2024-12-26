@@ -57,7 +57,7 @@ export const servers: IServer[] = [
     name     : 'Muz',
     server   : { host: 'muz.smoo.it', ip: '49.13.203.68' },
     location : { flag: 'de', name: 'Germany'  },
-    version  : { linkTree('1.0.5-rcl.8','Muz-dev/SmoOnlineServer' ),
+    version  : linkTree('1.0.5-rcl.8','Muz-dev/SmoOnlineServer' ),
     settings : {
       Server         : { MaxPlayers: 12 },
       Scenario       : { MergeEnabled: true},
