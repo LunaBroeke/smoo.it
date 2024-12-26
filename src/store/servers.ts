@@ -52,6 +52,20 @@ export const servers: IServer[] = [
       details : `<p>Connecting requires mod version ${linkRelease('v1.4.0', 'v1.4.0', 'CraftyBoss/SuperMarioOdysseyOnline')} or later.</p>`,
     },
   },
+
+    {
+    name     : 'Muz',
+    server   : { host: 'muz.smoo.it', ip: '49.13.203.68' },
+    location : { flag: 'de', name: 'Germany'  },
+    version  : { linkTree('1.0.5-rcl.8','Muz-dev/SmoOnlineServer' ),
+    settings : {
+      Server         : { MaxPlayers: 12 },
+      Scenario       : { MergeEnabled: true},
+      Shines         : { Emabled: true },
+      PersistShines  : { Enabled: true }
+    },
+  }
+  
   {
     dead     : true,
     name     : 'Sanae',
