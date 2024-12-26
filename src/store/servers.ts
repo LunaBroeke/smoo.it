@@ -53,6 +53,18 @@ export const servers: IServer[] = [
     },
   },
   {
+    name     : 'Muz',
+    server   : { host: 'larbe.org', ip: '49.13.203.68' },
+    location : { flag: 'de', name: 'Germany' },
+    version  : linkTree('1.0.5-rcl.8', 'Muz-dev/SmoOnlineServer'),
+    settings : {
+      Server         : { MaxPlayers: 12 },
+      Scenario       : { MergeEnabled: true },
+      Shines         : { Emabled: true },
+      PersistShines  : { Enabled: true },
+    },
+  },
+  {
     dead     : true,
     name     : 'Sanae',
     server   : { host: 'sanae.smoo.it', ip: '64.201.219.20' },
