@@ -37,22 +37,6 @@ export const servers: IServer[] = [
     },
   },
   {
-    name     : 'Piplup (UDP)',
-    link     : 'https://piplup.smoo.it',
-    server   : { host: 'piplus.smoo.it', ip: '34.29.243.224', port: 1029 },
-    location : { flag: 'us', name: 'US-Central' },
-    settings : {
-      Server        : { MaxPlayers: 8 },
-      Scenario      : { MergeEnabled: true },
-      Shines        : { Enabled: true },
-      PersistShines : { Enabled: true },
-    },
-    version: {
-      html    : linkRelease('1.0.5-rcl.1', 'udp/1.0.5', 'Istador/smo-multi-rs'),
-      details : `<p>Connecting requires mod version ${linkRelease('v1.4.0', 'v1.4.0', 'CraftyBoss/SuperMarioOdysseyOnline')} or later.</p>`,
-    },
-  },
-  {
     name     : 'Muz',
     server   : { host: 'larbe.org', ip: '49.13.203.68' },
     location : { flag: 'de', name: 'Germany' },
