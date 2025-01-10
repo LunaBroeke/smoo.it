@@ -58,17 +58,23 @@
       <template #cell(server)="{ item: { name, server: { host, ip, port }, link } }">
         <div class="name"><b>{{ name }}</b></div>
         <div class="host" v-if="host">
-          <span :id="'servers-ip-' + host + '-' + port">
+          <span :id="'servers-host-' + host + '-' + port">
             <a-ext v-if="link" :href="link">{{ host }}</a-ext>
             <span v-else>{{ host }}</span>
           </span>
           <b-tooltip
-            :target="'servers-ip-' + host + '-' + port"
+            :target="'servers-host-' + host + '-' + port"
             placement="top"
             boundary="viewport"
           >
             <span v-html="getIPv4({ host, port, ip })"/>
           </b-tooltip>
+        </div>
+        <div class="ip" v-else-if="ip">
+          <span>
+            <a-ext v-if="link" :href="link">{{ ip }}</a-ext>
+            <span v-else>{{ ip }}</span>
+          </span>
         </div>
         <div class="port" :class="{ 'default': (port || defaultPort) === defaultPort }">{{ port || defaultPort }}</div>
       </template>

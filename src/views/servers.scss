@@ -25,6 +25,7 @@
         }
         @media (min-width: 576px) {
           .host::before { content: 'Host: '; }
+          .ip::before { content: 'IPv4: '; }
           .port.default { display: block !important; }
         }
         .port::before { content: 'Port: '; }
