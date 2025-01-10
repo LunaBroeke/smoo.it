@@ -145,15 +145,6 @@ export const servers: IServer[] = [
     },
   },
   {
-    name     : 'Krokilex',
-    server   : { host: 'krokilex.smoo.it', ip: '37.16.29.245' },
-    location : { flag: 'fr', name: 'France' },
-    version  : linkRelease('0.3.0', 'rust/0.3.0', 'JulesGuesnon/smo-online-server'),
-    settings : {
-      Server: { MaxPlayers: 8 },
-    },
-  },
-  {
     name     : 'Kamrons Public (H&S)',
     server   : { ip: '66.220.29.106', port: 1027 },
     location : { flag: 'us', name: 'US-West' },
@@ -163,6 +154,15 @@ export const servers: IServer[] = [
       Scenario      : { MergeEnabled: true },
       Shines        : { Enabled: true },
       PersistShines : { Enabled: true },
+    },
+  },
+  {
+    name     : 'Krokilex',
+    server   : { host: 'krokilex.smoo.it', ip: '37.16.29.245' },
+    location : { flag: 'fr', name: 'France' },
+    version  : linkRelease('0.3.0', 'rust/0.3.0', 'JulesGuesnon/smo-online-server'),
+    settings : {
+      Server: { MaxPlayers: 8 },
     },
   },
   {
