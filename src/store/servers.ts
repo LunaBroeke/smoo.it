@@ -146,7 +146,7 @@ export const servers: IServer[] = [
   },
   {
     name     : 'Muz',
-    server   : { host: 'larbe.org', ip: '49.13.203.68' },
+    server   : { host: 'muz.smoo.it', ip: '49.13.203.68' },
     location : { flag: 'de', name: 'Germany' },
     version  : linkRelease('1.0.5-rcl.8', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
     settings : {
