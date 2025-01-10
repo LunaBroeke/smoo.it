@@ -134,7 +134,7 @@ export const servers: IServer[] = [
   },
   {
     name     : 'Kamrons Public (H&S)',
-    server   : { ip: '66.220.29.106', port: 1027 },
+    server   : { host: 'kamron.smoo.it', ip: '66.220.29.106', port: 1027 },
     location : { flag: 'us', name: 'US-West' },
     version  : linkTree('main', 'Sanae6/SmoOnlineServer', 'Sanae6/Server'),
     settings : {
