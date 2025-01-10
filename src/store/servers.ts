@@ -13,8 +13,8 @@ export const servers: IServer[] = [
   {
     name     : 'Piplup (Main)',
     link     : 'https://piplup.smoo.it',
-    server   : { host: 'piplup.smoo.it', ip: '35.228.67.224' },
-    location : { flag: 'fi', name: 'Finland' },
+    server   : { host: 'piplup.smoo.it', ip: '143.198.241.242' },
+    location : { flag: 'gb', name: 'United Kingdom' },
     version  : linkTree('server', 'piplup/server', 'TeamPiplup/SmoOnlineServer'),
     settings : {
       Server        : { MaxPlayers: 10 },
@@ -26,30 +26,14 @@ export const servers: IServer[] = [
   {
     name     : 'Piplup (Capture Sync)',
     link     : 'https://piplup.smoo.it',
-    server   : { host: 'piplup.smoo.it', ip: '35.228.67.22', port: 1028 },
-    location : { flag: 'fi', name: 'Finland' },
+    server   : { host: 'piplup.smoo.it', ip: '143.198.241.242', port: 1028 },
+    location : { flag: 'gb', name: 'United Kingdom' },
     version  : linkTree('server', 'piplup/server', 'TeamPiplup/SmoOnlineServer'),
     settings : {
       Server        : { MaxPlayers: 8 },
       Scenario      : { MergeEnabled: true },
       Shines        : { Enabled: true },
       PersistShines : { Enabled: true },
-    },
-  },
-  {
-    name     : 'Piplup (UDP)',
-    link     : 'https://piplup.smoo.it',
-    server   : { host: 'piplus.smoo.it', ip: '34.29.243.224', port: 1029 },
-    location : { flag: 'us', name: 'US-Central' },
-    settings : {
-      Server        : { MaxPlayers: 8 },
-      Scenario      : { MergeEnabled: true },
-      Shines        : { Enabled: true },
-      PersistShines : { Enabled: true },
-    },
-    version: {
-      html    : linkRelease('1.0.5-rcl.1', 'udp/1.0.5', 'Istador/smo-multi-rs'),
-      details : `<p>Connecting requires mod version ${linkRelease('v1.4.0', 'v1.4.0', 'CraftyBoss/SuperMarioOdysseyOnline')} or later.</p>`,
     },
   },
   {
