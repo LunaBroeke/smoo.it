@@ -236,7 +236,7 @@ export const servers: IServer[] = [
   },
   {
     name     : 'Colbster937',
-    server   : { host: 'smoo.colbster937.dev', ip: '5.183.8.27', port: 1027 },
+    server   : { host: 'colbster.smoo.it', ip: '5.183.8.27', port: 1027 },
     location : { flag: 'us', name: 'US-Central' },
     settings : {
       Server: { MaxPlayers: 8 },
