@@ -52,6 +52,7 @@ export const servers: IServer[] = [
     location : { flag: 'de', name: 'Germany' },
   },
   {
+    dead     : true,
     name     : 'Sleepyy',
     server   : { host: 'sleepyy.smoo.it', ip: '141.94.109.19' },
     location : { flag: 'fr', name: 'France' },
@@ -60,6 +61,7 @@ export const servers: IServer[] = [
     },
   },
   {
+    dead     : true,
     name     : 'Parknich',
     server   : { host: 'parknich.smoo.it', ip: '15.204.209.108' },
     location : { flag: 'us', name: 'US-East' },
