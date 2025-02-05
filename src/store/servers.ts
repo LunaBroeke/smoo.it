@@ -250,7 +250,7 @@ export const servers: IServer[] = [
     location : { flag: 'de', name: 'Germany' },
     version  : linkTree('main', 'SchweGELBin/main', 'SchweGELBin/SMOOS-CS'),
     settings : {
-      Server : { MaxPlayers: 8 },
+      Server: { MaxPlayers: 8 },
     },
   },
 ].map((s: IServer) => {
