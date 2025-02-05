@@ -244,6 +244,15 @@ export const servers: IServer[] = [
       Server: { MaxPlayers: 8 },
     },
   },
+  {
+    name   : 'SchweGELBin',
+    server : { host: 'schwegelbin.smoo.it', ip: '78.47.17.130', port: 1027 },
+    location : { flag: 'de', name: 'Germany' },
+    version  : linkTree('main', 'SchweGELBin/main', 'SchweGELBin/SMOOS-CS'),
+    settings : {
+      Server : { MaxPlayers: 8 },
+    },
+  },
 ].map((s: IServer) => {
   s.server.state = null
   return s
