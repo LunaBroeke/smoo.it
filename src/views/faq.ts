@@ -334,8 +334,8 @@ export default class FAQ extends Vue {
               <li>
                 <b-badge variant="danger">hard</b-badge>
                 by sending <a-int name="host" id="commands">server commands</a-int> to the
-                <a-ext href="https://github.com/Istador/SmoOnlineServer/blob/json-api/Server/JsonApi/README.md">JSON API</a-ext>
-                of your non-official server.
+                <a-ext href="https://github.com/Sanae6/SmoOnlineServer/blob/master/Server/JsonApi/README.md" icon="github">JSON API</a-ext>
+                of your server.
               </li>
             </ul>
           </li>
