@@ -28,7 +28,8 @@
     <b>"Enabled"</b>: <i>false</i>,
     <b>"Players"</b>: [],
     <b>"IpAddresses"</b>: [],
-    <b>"Stages"</b>: []
+    <b>"Stages"</b>: [],
+    <b>"GameModes"</b>: []
   },
   <b>"Discord"</b>: {
     <b>"Token"</b>: <i>null</i>,
@@ -143,14 +144,30 @@
             An array of
             <b-btn variant="info" size="sm" style="padding: 0 0.4em;" v-b-modal.host-settings-stage-known>&lt;stage&gt;</b-btn>
             values that result in a kick
-            <b-icon icon="info-circle-fill" id="server-settings-kick"/>
+            <b-icon icon="info-circle-fill" id="server-settings-kick-stage"/>
             from the server when a player joins one of them.
-            <b-tooltip target="server-settings-kick" triggers="hover">
+            <b-tooltip target="server-settings-kick-stage" triggers="hover">
               <p>
                 A <code>kick</code> is not a <code>ban</code> from the server.
               </p>
               <p>
                 When entering a banned stage a packet that should crash the game is send to the client.
+                Until reconnecting again the server will not send or process any packets to or from the client.
+              </p>
+            </b-tooltip>
+          </li>
+          <li>
+            <b>GameModes</b>:
+            <b-badge variant="warning" v-b-tooltip.html="'This setting will be added with server version <code>1.0.5</code>.'">1.0.5</b-badge>
+            An array of game mode indicies (integers) that result in a kick
+            <b-icon icon="info-circle-fill" id="server-settings-kick-gamemode"/>
+            from the server when a player activates one of them.
+            <b-tooltip target="server-settings-kick-gamemode" triggers="hover">
+              <p>
+                A <code>kick</code> is not a <code>ban</code> from the server.
+              </p>
+              <p>
+                When activating a banned game mode a packet that should crash the game is send to the client.
                 Until reconnecting again the server will not send or process any packets to or from the client.
               </p>
             </b-tooltip>
