@@ -146,8 +146,13 @@ export const servers: IServer[] = [
     name     : 'RCL 1 (H&S)',
     server   : { host: 'rcl.smoo.it' },
     location : { flag: 'de', name: 'Germany' },
-    version  : linkRelease('1.0.5-rcl.8', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
-    settings : {
+    version  : {
+      html    : linkRelease('1.0.5-rcl.10', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
+      details : `
+        <p>Connecting requires the ${linkRelease('latest-dev', 'latest dev build', 'CraftyBoss/SuperMarioOdysseyOnline')} of the mod.</p>
+      `,
+    },
+    settings: {
       Server        : { MaxPlayers: 6 },
       Scenario      : { MergeEnabled: true },
       Shines        : { Enabled: false, ClearOnNewSaves: false },
@@ -158,8 +163,13 @@ export const servers: IServer[] = [
     name     : 'RCL 2 (100%)',
     server   : { host: 'rcl.smoo.it', port: 1028 },
     location : { flag: 'de', name: 'Germany' },
-    version  : linkRelease('1.0.5-rcl.8', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
-    settings : {
+    version  : {
+      html    : linkRelease('1.0.5-rcl.10', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
+      details : `
+        <p>Connecting requires the ${linkRelease('latest-dev', 'latest dev build', 'CraftyBoss/SuperMarioOdysseyOnline')} of the mod.</p>
+      `,
+    },
+    settings: {
       Server        : { MaxPlayers: 6 },
       Scenario      : { MergeEnabled: true },
       Shines        : { Enabled: true, ClearOnNewSaves: false },
@@ -170,8 +180,13 @@ export const servers: IServer[] = [
     name     : 'RCL 3 (Co-Op)',
     server   : { host: 'rcl.smoo.it', port: 1029 },
     location : { flag: 'de', name: 'Germany' },
-    version  : linkRelease('1.0.5-rcl.8', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
-    settings : {
+    version  : {
+      html    : linkRelease('1.0.5-rcl.10', 'rcl/1.0.5', 'Istador/SmoOnlineServer'),
+      details : `
+        <p>Connecting requires the ${linkRelease('latest-dev', 'latest dev build', 'CraftyBoss/SuperMarioOdysseyOnline')} of the mod.</p>
+      `,
+    },
+    settings: {
       Server        : { MaxPlayers: 6 },
       Scenario      : { MergeEnabled: true },
       Shines        : { Enabled: true, ClearOnNewSaves: true },
@@ -191,7 +206,7 @@ export const servers: IServer[] = [
     version: {
       html    : linkRelease('1.0.5-rcl.3', 'udp/1.0.5', 'Istador/smo-multi-rs'),
       details : `
-        <p>Connecting requires mod version ${linkRelease('v1.4.0', 'v1.4.0', 'CraftyBoss/SuperMarioOdysseyOnline')} or later.</p>
+        <p>Connecting requires the ${linkRelease('latest-dev', 'latest dev build', 'CraftyBoss/SuperMarioOdysseyOnline')} of the mod.</p>
       `,
     },
   },
