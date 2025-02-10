@@ -46,6 +46,10 @@
   <b>"PersistShines"</b>: {
     <b>"Enabled"</b>: <i>false</i>,
     <b>"Filename"</b>: <a>"./moons.json"</a>
+  },
+  <b>"JsonApi"</b>: {
+    <b>"Enabled"</b>: <i>false</i>,
+    <b>"Tokens"</b>: {}
   }
 }
 </pre>
@@ -233,6 +237,24 @@
           <li>
             <b>Filename</b>:
             In which file to save the shines into.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>JsonApi</b>:
+        <b-badge variant="warning" class="mr-1" v-b-tooltip.html="'This setting will be added with server version <code>1.0.5</code>.'">1.0.5</b-badge>
+        An option to enable and configure the
+        <a-ext href="https://github.com/Sanae6/SmoOnlineServer/blob/master/Server/JsonApi/README.md" icon="github">JSON API</a-ext>
+        which can be used to fetch the server settings and current player status,
+        or to execute <a-int name="host" id="commands">commands</a-int> remotely.
+        <ul>
+          <li>
+            <b>Enabled</b>:
+            <code>true</code> or <code>false</code>.
+          </li>
+          <li>
+            <b>Tokens</b>:
+            An object that maps tokens (secret access codes) to an array of permissions.
           </li>
         </ul>
       </li>
