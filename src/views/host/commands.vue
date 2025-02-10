@@ -370,6 +370,12 @@
           </ul>
         </div>
 
+        <div>
+          <kbd>shine set {true|false}</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.3</code>.'">1.0.3</b-badge>
+          To enable or disable shine syncing.
+        </div>
+
       </div>
     </div>
 
