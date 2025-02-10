@@ -14,7 +14,7 @@
       attaching to the <a-int name="host" id="docker">docker</a-int> container,
       or using the <a-int name="host" id="discord">Discord</a-int> integration,
       you can send it commands to control and interact with it.
-      Following are all the commands that the server version <code>1.0.4</code> understands.
+      Following are all the commands that the server version <code>1.0.5</code> understands.
     </div>
 
     <div>
@@ -202,6 +202,28 @@
           </ul>
         </div>
 
+        <div>
+          <kbd>ban gamemode &lt;game-mode&gt;</kbd>
+          <b-badge variant="warning" class="mr-1" v-b-tooltip.html="'This command will be added with server version <code>1.0.5</code>.'">1.0.5</b-badge>
+          Adds game modes to the <code>banlist</code>.
+          If a player enters a banned game mode, then it sends them to an invalid stage that will crash the game,
+          and then ignores the connection to the client of the player.
+          <br/>
+          <ul>
+            <li>
+              <kbd>&lt;game-mode&gt;</kbd>
+              The index that the mod uses for the game mode or its identifier.
+              <ul>
+               <li><kbd>-1</kbd> or <kbd>None</kbd>: No active game mode.</li>
+               <li><kbd>0</kbd> or <kbd>Legacy</kbd>: Used by older mod versions from before the game mode was synchronized.</li>
+               <li><kbd>1</kbd> or <kbd>HideAndSeek</kbd>: <a-int name="play" id="hide-and-seek">Hide &amp; Seek</a-int></li>
+               <li><kbd>2</kbd> or <kbd>Sardines</kbd>: Sardines</li>
+               <li><kbd>3</kbd> or <kbd>FreezeTag</kbd>: Freeze-Tag</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
 
@@ -242,6 +264,26 @@
               <b-btn variant="info" size="sm" class="ml-2" style="padding: 0 0.4em;" v-b-modal.host-commands-stage-known>show known values</b-btn>
               <br/>Using an alias will remove all known stages in that kingdom from the <code>banlist</code> individually.
               <br/>Invalid stage values (e.g. for custom kingdoms) can be removed by appending a <kbd>!</kbd> to the end.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <kbd>unban gamemode &lt;game-mode&gt;</kbd>
+          <b-badge variant="warning" class="mr-1" v-b-tooltip.html="'This command will be added with server version <code>1.0.5</code>.'">1.0.5</b-badge>
+          Removes the game mode from the <code>banlist</code>.
+          <br/>
+          <ul>
+            <li>
+              <kbd>&lt;game-mode&gt;</kbd>
+              The index that the mod uses for the game mode or its identifier.
+              <ul>
+               <li><kbd>-1</kbd> or <kbd>None</kbd>: No active game mode.</li>
+               <li><kbd>0</kbd> or <kbd>Legacy</kbd>: Used by older mod versions from before the game mode was synchronized.</li>
+               <li><kbd>1</kbd> or <kbd>HideAndSeek</kbd>: <a-int name="play" id="hide-and-seek">Hide &amp; Seek</a-int></li>
+               <li><kbd>2</kbd> or <kbd>Sardines</kbd>: Sardines</li>
+               <li><kbd>3</kbd> or <kbd>FreezeTag</kbd>: Freeze-Tag</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -374,6 +416,34 @@
           <kbd>shine set {true|false}</kbd>
           <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.3</code>.'">1.0.3</b-badge>
           To enable or disable shine syncing.
+        </div>
+
+        <div>
+          <kbd>shine exclude &lt;shine-id&gt;</kbd>
+          <b-badge variant="warning" class="mr-1" v-b-tooltip.html="'This command will be added with server version <code>1.0.5</code>.'">1.0.5</b-badge>
+          To prevent a moon to be synchronized with other players.
+          <br/>
+          <ul>
+            <li>
+              <kbd>&lt;shine-id&gt;</kbd>
+              The unique ID for an individual shine (moon) in the game.
+              <b-btn variant="info" size="sm" class="ml-2" style="padding: 0 0.4em;" v-b-modal.host-commands-shine-id>show known values</b-btn>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <kbd>shine include &lt;shine-id&gt;</kbd>
+          <b-badge variant="warning" class="mr-1" v-b-tooltip.html="'This command will be added with server version <code>1.0.5</code>.'">1.0.5</b-badge>
+          To no longer prevent a moon to be synchronized with other players.
+          <br/>
+          <ul>
+            <li>
+              <kbd>&lt;shine-id&gt;</kbd>
+              The unique ID for an individual shine (moon) in the game.
+              <b-btn variant="info" size="sm" class="ml-2" style="padding: 0 0.4em;" v-b-modal.host-commands-shine-id>show known values</b-btn>
+            </li>
+          </ul>
         </div>
 
       </div>
