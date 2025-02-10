@@ -133,16 +133,19 @@
 
         <div>
           <kbd>ban list</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Shows all entries on the <code>banlists</code> and whether they are enabled or not.
         </div>
 
         <div>
           <kbd>ban {enable|disable}</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Enables or disables all <code>banlists</code> at once.
         </div>
 
         <div>
           <kbd>ban player &lt;player-name&gt;...</kbd>
+          <b-badge variant="secondary" v-b-tooltip.html="'Before server version <code>1.0.4</code> this command was just <kbd>ban &amp;lt;player-name&amp;gt;...</kbd>'">1.0.4</b-badge>
           Sends the connected player(s) to an invalid stage that will crash the game,
           adds their profile IDs and IPv4 addresses to the <code>banlists</code>,
           and then ignores the connection to the client of the player(s).
@@ -159,6 +162,7 @@
 
         <div>
           <kbd>ban profile &lt;profile-id&gt;</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Adds the profile ID to the <code>banlist</code>.
           If a player with that profile ID is connected, then it sends them to an invalid stage that will crash the game,
           and then ignores the connection to the client of the player.
@@ -170,6 +174,7 @@
 
         <div>
           <kbd>ban ip &lt;ipv4-address&gt;</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Adds the IPv4 address to the <code>banlist</code>.
           If a player with that IPv4 address is connected, then it sends them to an invalid stage that will crash the game,
           and then ignores the connection to the client of the player.
@@ -181,7 +186,10 @@
 
         <div>
           <kbd>ban stage &lt;stage&gt;</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Adds the stage to the <code>banlist</code>.
+          If a player enters a banned stage, then it sends them to an invalid stage that will crash the game,
+          and then ignores the connection to the client of the player.
           <br/>
           <ul>
             <li>
@@ -204,6 +212,7 @@
 
         <div>
           <kbd>unban profile &lt;profile-id&gt;</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Removes the profile ID from the <code>banlist</code>.
           <br/>
           <ul>
@@ -213,6 +222,7 @@
 
         <div>
           <kbd>unban ip &lt;ipv4-address&gt;</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Removes the IPv4 address from the <code>banlist</code>.
           <br/>
           <ul>
@@ -222,6 +232,7 @@
 
         <div>
           <kbd>unban stage &lt;stage&gt;</kbd>
+          <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.4</code>.'">1.0.4</b-badge>
           Removes the stage from the <code>banlist</code>.
           <br/>
           <ul>
@@ -364,11 +375,13 @@
 
     <div>
       <kbd>dscrestart</kbd>
+      <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.2</code>.'">1.0.2</b-badge>
       Restarts the <a-int name="host" id="discord">Discord</a-int> bot.
     </div>
 
     <div>
       <kbd>restartserver</kbd>
+      <b-badge variant="primary" v-b-tooltip.html="'This command was added with server version <code>1.0.3</code>.'">1.0.3</b-badge>
       Stops the server and restarts it again in a new process.
       This doesn't work well with <a-int name="host" id="docker">docker</a-int>,
       because when its main process stops, the whole docker container will be stopped.
