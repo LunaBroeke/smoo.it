@@ -84,7 +84,7 @@ export const servers: IServer[] = [
   },
   {
     name     : 'Luwuna (H&S)',
-    link     : 'https://server.lunabroeke.dev/ServerList',
+    link     : 'https://luwuna.smoo.it/ServerList',
     server   : { host: 'luwuna.smoo.it', ip: '5.180.182.219', port: 1027 },
     location : { flag: 'nl', name: 'Netherlands' },
     version  : linkTree('main', 'LunaBroeke/main', 'LunaBroeke/SmoOnlineServer'),
@@ -97,7 +97,7 @@ export const servers: IServer[] = [
   },
   {
     name     : 'Luwuna (Co-op)',
-    link     : 'https://server.lunabroeke.dev/ServerList',
+    link     : 'https://luwuna.smoo.it/ServerList',
     server   : { host: 'luwuna.smoo.it', ip: '5.180.182.219', port: 1028 },
     location : { flag: 'nl', name: 'Netherlands' },
     version  : linkTree('main', 'LunaBroeke/main', 'LunaBroeke/SmoOnlineServer'),
@@ -110,7 +110,7 @@ export const servers: IServer[] = [
   },
   {
     name     : 'Luwuna (Versus)',
-    link     : 'https://server.lunabroeke.dev/ServerList',
+    link     : 'https://luwuna.smoo.it/ServerList',
     server   : { host: 'luwuna.smoo.it', ip: '5.180.182.219', port: 1029 },
     location : { flag: 'nl', name: 'Netherlands' },
     version  : linkTree('main', 'LunaBroeke/main', 'LunaBroeke/SmoOnlineServer'),
